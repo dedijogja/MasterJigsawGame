@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dilaog_background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_height"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/bg_utama" >
+
+        <RelativeLayout
+            android:id="@+id/title_bar_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@color/warna_action_bar_utama" >
+
+            <us.masterjigsawgame.core.CustomTitleTextview
+                android:id="@+id/title_textview"
+                style="@style/DialogTitleTextStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/easy"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_item_height"
+            android:layout_below="@id/title_bar_view"
+            android:layout_marginLeft="@dimen/view_left_right_padding"
+            android:layout_marginRight="@dimen/view_left_right_padding"
+            android:paddingLeft="@dimen/view_left_right_padding"
+            android:paddingRight="@dimen/view_left_right_padding" >
+
+            <us.masterjigsawgame.core.CustomTitleTextview
+                android:id="@+id/easy_textview"
+                style="@style/DialogMenuTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Easy" />
+
+            <RadioButton
+                android:id="@+id/easy_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_below="@id/easy"
+            android:layout_marginLeft="@dimen/view_left_right_padding"
+            android:layout_marginRight="@dimen/view_left_right_padding"
+            android:background="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/medium"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_item_height"
+            android:layout_below="@id/divider1"
+            android:layout_marginLeft="@dimen/view_left_right_padding"
+            android:layout_marginRight="@dimen/view_left_right_padding"
+            android:paddingLeft="@dimen/view_left_right_padding"
+            android:paddingRight="@dimen/view_left_right_padding" >
+
+            <us.masterjigsawgame.core.CustomTitleTextview
+                android:id="@+id/medium_textview"
+                style="@style/DialogMenuTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Medium" />
+
+            <RadioButton
+                android:id="@+id/medium_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_below="@id/medium"
+            android:layout_marginLeft="@dimen/view_left_right_padding"
+            android:layout_marginRight="@dimen/view_left_right_padding"
+            android:background="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/hard"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_item_height"
+            android:layout_below="@id/divider2"
+            android:layout_marginLeft="@dimen/view_left_right_padding"
+            android:layout_marginRight="@dimen/view_left_right_padding"
+            android:paddingLeft="@dimen/view_left_right_padding"
+            android:paddingRight="@dimen/view_left_right_padding" >
+
+            <us.masterjigsawgame.core.CustomTitleTextview
+                android:id="@+id/hard_textview"
+                style="@style/DialogMenuTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Hard" />
+
+            <RadioButton
+                android:id="@+id/hard_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

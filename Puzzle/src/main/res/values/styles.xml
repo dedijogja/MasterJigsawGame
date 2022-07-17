@@ -1,0 +1,167 @@
+<resources>
+
+    <style name="PuzzleStyle" parent="Theme.AppCompat.Light.NoActionBar.FullScreen">
+
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#000000</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+    <style name="HintHeaderTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CounterTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:shadowColor">@color/black</item>
+    </style>
+
+    <style name="HomeMenuTitleTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowDx">5.0</item>
+        <item name="android:shadowDy">5.0</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">5.0</item>
+        <item name="android:shadowColor">@color/black</item>
+    </style>
+
+    <style name="DialogMenuTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ButtonTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/tex_size_normal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SplashTitleTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">10.0</item>
+        <item name="android:shadowColor">@color/black</item>
+    </style>
+
+
+    <style name="AllListItemSubHeaderTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AllListItemHeaderTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ErrorTextStyle">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TitleTextStyle">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+
+    <style name="RemoveAdsTitleTextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/remove_ads_color</item>
+    </style>
+
+    <style name="MenuTitleTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">5.0</item>
+        <item name="android:shadowColor">@color/black</item>
+    </style>
+
+    <style name="AppTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">0dp</item>
+    </style>
+
+    <style name="HomeItemButtonStyle">
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="DialogTitleTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Sub_item_TextStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">5.0</item>
+        <item name="android:shadowColor">@color/black</item>
+    </style>
+
+    <style name="Background_list_TextStyle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowDx">3.0</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">5.0</item>
+        <item name="android:shadowColor">@color/black</item>
+    </style>
+
+    <style name="score_list_TextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">5.0</item>
+        <item name="android:shadowColor">@color/black</item>
+    </style>
+
+    <style name="DialogSubHeaderTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+</resources>

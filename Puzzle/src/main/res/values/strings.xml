@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wolf Jigsaw Puzzle</string>
+    <string name="title_app_name">Picture Puzzle Game</string>
+    <string name="error">Error</string>
+    <string name="choose_photo">Choose Photo</string>
+    <string name="setting_heading">Settings </string>
+    <string name="more_app">More apps</string>
+    <string name="about">About</string>
+    <string name="difficulti_level">Puzzle Level</string>
+    <string name="easy_level">Easy</string>
+    <string name="medium_level">Medium</string>
+    <string name="hard_level">Hard</string>
+    <string name="easy_level_score">Easy Level</string>
+    <string name="medium_level_score">Medium Level</string>
+    <string name="hard_level_score">Hard Level</string>
+    <string name="sound">Sound</string>
+    <string name="share_app">Share App</string>
+    <string name="vibration">Vibration</string>
+    <string name="empty_location">Empty Location</string>
+    <string name="first_location">First</string>
+    <string name="last_location">Second</string>
+    <string name="random_location">Random</string>
+    <string name="score">Scores</string>
+    <string name="score_detail">Scores Details</string>
+    <string name="score_no">Puzzle No.</string>
+    <string name="hint_taken">Hint Taken</string>
+    <string name="rateapp">Rate Us</string>
+    <string name="show_hint">Show Hint</string>
+    <string name="share_via">Share via</string>
+    <string name="hint">Hint</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_internet">No internet connected, connect to internet and try again.</string>
+    <string name="share_subject">I like Picture Puzzle Game, simple and addictive puzzle game</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="moves">Moves</string>
+    <string name="time">Time</string>
+    <string name="confirmation">Puzzle in progress</string>
+    <string name="difficulty_level_confirmation">Do you want to leave current puzzle?</string>
+    <string name="win">You won</string>
+    <string name="retry">Retry</string>
+    <string name="next">Next</string>
+    <string name="congrates">Congratulation you completed puzzle in</string>
+    <string name="high_score">High Score:</string>
+    <string name="and">and in</string>
+    <string name="reset_score">Reset</string>
+    <string name="new_game">New Game</string>
+    <string name="loading_high_score">Loading High score, please wait...</string>
+    <string name="loading_scorelist">Loading scores, please wait...</string>
+    <string name="loadingstring">Loading...</string>
+    <string name="no_score_found">No Scores found</string>
+
+</resources>

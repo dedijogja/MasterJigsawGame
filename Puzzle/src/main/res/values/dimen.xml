@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="icons_width_height">95dip</dimen>
+    <dimen name="hint_text_size">25dip</dimen>
+    <dimen name="game_view_padding">15dip</dimen>
+    <dimen name="splash_thumbnail_width_height">260dip</dimen>
+    <dimen name="splash_thumbnail_margin">60dip</dimen>
+    <dimen name="titlebar_height">50dip</dimen>
+    <dimen name="menu_icon_width_height">50dip</dimen>
+    <dimen name="grid_view_padding">0dip</dimen>
+    <dimen name="grid_view_spacing">0dip</dimen>
+    <dimen name="progressbar_height_width">20dip</dimen>
+    <dimen name="thumbnail_width_height">75dip</dimen>
+    <dimen name="thumbnail_padding_top_bottom">5dip</dimen>
+    <dimen name="thumbnail_margin_left_right">5dip</dimen>
+    <dimen name="menu_icon_bar_height">55dip</dimen>
+    <dimen name="setting_item_height">60dip</dimen>
+    <dimen name="view_left_right_margin">10dip</dimen>
+    <dimen name="view_left_right_padding">4dip</dimen>
+    <dimen name="view_top_margin">10dip</dimen>
+    <dimen name="menu_left_right_margin">10dip</dimen>
+    <dimen name="dialog_width">350dip</dimen>
+    <dimen name="dialog_height">202dip</dimen>
+    <dimen name="about_dialog_height">332dip</dimen>
+    <dimen name="confirmation_dialog_height">200dip</dimen>
+    <dimen name="dialog_item_height">50dip</dimen>
+    <dimen name="divider_height">0.5dip</dimen>
+    <dimen name="tex_size_normal">17sp</dimen>
+    <dimen name="background_text_height">60dip</dimen>
+    <dimen name="button_height">45dip</dimen>
+    <dimen name="button_width">140dip</dimen>
+    <dimen name="button_padding_left_right">20dip</dimen>
+
+</resources>

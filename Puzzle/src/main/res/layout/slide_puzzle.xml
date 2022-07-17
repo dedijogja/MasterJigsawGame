@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#016889" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#24AAD5"
+        android:id="@+id/tabs_bar2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:id="@+id/titlebar_layout"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <us.masterjigsawgame.core.CustomTitleTextview
+                android:text="Medium"
+                android:textSize="23sp"
+                android:textColor="#fff600"
+                android:id="@+id/title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="1" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/tabs_bar2_view3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="@drawable/icons_selector" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/timetext_textview"
+                    style="@style/HintHeaderTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/time" />
+
+                <Chronometer
+                    android:id="@+id/timer_view"
+                    style="@style/CounterTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timetext_textview"
+                    android:layout_centerHorizontal="true"
+                    android:saveEnabled="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tabs_bar2_view4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="@drawable/icons_selector" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/movestext_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/moves" />
+
+                <TextView
+                    android:text="123"
+                    android:id="@+id/moves_textview"
+                    style="@style/CounterTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/movestext_textview"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/tabs_bar2"
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabs_bar"
+        android:padding="10dp" >
+
+        <us.masterjigsawgame.customview.PuzzleView
+            android:id="@+id/tile_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#00000000"
+            android:focusableInTouchMode="true" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="#24AAD5"
+        android:id="@+id/tabs_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_above="@+id/adGame">
+
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:id="@+id/tabs_bar2_view1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/icons_selector"
+            android:onClick="viewClickHandler" >
+
+            <ImageView
+                android:src="@drawable/play"
+                android:id="@+id/play_pause_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:id="@+id/tabs_bar2_view2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/icons_selector"
+            android:onClick="viewClickHandler" >
+
+            <ImageView
+                android:src="@drawable/back_step_off"
+                android:id="@+id/undo_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:id="@+id/tabs_bar_view3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.30"
+            android:background="@drawable/icons_selector"
+            android:onClick="viewClickHandler" >
+
+            <ImageView
+                android:id="@+id/tabs_bar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/reload" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:id="@+id/tabs_bar_view4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.30"
+            android:background="@drawable/icons_selector"
+            android:onClick="viewClickHandler" >
+
+            <ImageView
+                android:id="@+id/tabs_bar4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/setting_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:id="@+id/tabs_bar_view5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.30"
+            android:background="@drawable/icons_selector"
+            android:onClick="viewClickHandler" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:src="@drawable/hint"
+                    android:id="@+id/tabs_bar5_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/complete_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabs_bar"
+        android:layout_below="@id/tabs_bar2"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_above="@id/tabs_bar"
+        android:layout_below="@id/tabs_bar2"
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:background="#34495E"
+        android:id="@+id/adGame"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

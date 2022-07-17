@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_utama">
+
+    <RelativeLayout
+        android:id="@+id/titlebar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="#24AAD5" >
+
+        <us.masterjigsawgame.core.CustomTitleTextview
+            android:id="@+id/title"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/view_left_right_margin"
+            android:text="@string/score_detail" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/contents_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/titlebar_layout" >
+
+        <RelativeLayout
+            android:id="@+id/button_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dip"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:id="@+id/reset_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="viewClickHandler"
+                android:paddingLeft="@dimen/button_padding_left_right"
+                android:paddingRight="@dimen/button_padding_left_right"
+                android:text="@string/reset_score" />
+
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/reset_button"
+                android:onClick="viewClickHandler"
+                android:paddingLeft="@dimen/button_padding_left_right"
+                android:paddingRight="@dimen/button_padding_left_right"
+                android:text="@string/ok" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/header_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/menu_icon_bar_height"
+            android:background="#428ca4"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/no_textview"
+                style="@style/CounterTextStyle"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="@string/score_no" />
+
+            <TextView
+                android:id="@+id/time_textview"
+                style="@style/CounterTextStyle"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="@string/time" />
+
+            <TextView
+                android:id="@+id/moves_textview"
+                style="@style/CounterTextStyle"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="@string/moves" />
+
+            <TextView
+                android:id="@+id/helptaken_textview"
+                style="@style/CounterTextStyle"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="@string/hint_taken" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/button_layout"
+            android:layout_below="@id/header_bar"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/white"
+            android:dividerHeight="@dimen/divider_height"
+            android:fadingEdge="vertical"
+            android:listSelector="@color/transparent"
+            android:smoothScrollbar="true" />
+    </RelativeLayout>
+
+    <us.masterjigsawgame.core.CustomTitleTextview
+        android:id="@+id/no_scorefound_textview"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_score_found"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/header_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/background_text_height"
+        android:weightSum="1" >
+
+        <us.masterjigsawgame.core.CustomDescriptionTextview
+            android:id="@+id/no_textview"
+            style="@style/score_list_TextStyle"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/score_no" />
+
+        <us.masterjigsawgame.core.CustomDescriptionTextview
+            android:id="@+id/time_textview"
+            style="@style/score_list_TextStyle"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/time" />
+
+        <us.masterjigsawgame.core.CustomDescriptionTextview
+            android:id="@+id/moves_textview"
+            style="@style/score_list_TextStyle"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/moves" />
+
+        <us.masterjigsawgame.core.CustomDescriptionTextview
+            android:id="@+id/helptaken_textview"
+            style="@style/score_list_TextStyle"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/hint_taken" />
+    </LinearLayout>
+
+</RelativeLayout>
